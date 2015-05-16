@@ -1,0 +1,22 @@
+{
+    "name": "microffice/core",
+    "description": "Microffice's core package.",
+    "keywords": ["CRM", "ERP", "microffice", "core"],
+    "type": "package",
+    "license": "GPL-3.0",
+    "authors": [
+        {
+            "name": "Stoemp Saucisse",
+            "email": "stoempsaucisse@hotmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.6.8"
+    },
+    "autoload": {
+        "psr-4": {
+            "Microffice\\": "src/Microffice"
+        }
+    },
+    "minimum-stability": "stable"
+}
