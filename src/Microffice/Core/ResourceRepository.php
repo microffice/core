@@ -1,6 +1,21 @@
-<?php namespace Microffice\Units\Contracts;
+<?php namespace Microffice\Core;
 
 interface ResourceRepository {
+    
+    /**
+    * Display a listing of the resource.
+    *
+    * @return Response
+    */
+    public function index();
+
+    /**
+    * Store a newly created resource in storage.
+    *
+    * @param array $data
+    * @return Response
+    */
+    public function store($data);
 
     /**
     * Display the specified resource.
@@ -8,26 +23,13 @@ interface ResourceRepository {
     * @param int $id
     * @return Response
     */
-    public function findById($id);
-    
-    /**
-    * Display a listing of the resource.
-    *
-    * @return Response
-    */
-    public function findAll();
-
-    /**
-    * Store a newly created resource in storage.
-    *
-    * @return Response
-    */
-    public function store($data);
+    public function show($id);
 
     /**
     * Update the specified resource in storage.
     *
     * @param int $id
+    * @param array $data
     * @return Response
     */
     public function update($id, $data);
