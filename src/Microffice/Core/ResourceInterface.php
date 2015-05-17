@@ -1,6 +1,6 @@
 <?php namespace Microffice\Core;
 
-interface ResourceRepository {
+interface ResourceInterface {
     
     /**
     * Return a listing of the resource.
