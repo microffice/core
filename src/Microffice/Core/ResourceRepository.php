@@ -3,7 +3,7 @@
 interface ResourceRepository {
     
     /**
-    * Display a listing of the resource.
+    * Return a listing of the resource.
     *
     * @return Response
     */
@@ -18,7 +18,7 @@ interface ResourceRepository {
     public function store($data);
 
     /**
-    * Display the specified resource.
+    * Return the specified resource.
     *
     * @param int $id
     * @return Response

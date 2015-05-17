@@ -5,10 +5,9 @@ interface ViewableResourceRepository extends ResourceRepository {
     /**
     * Display a form to create a new Unit.
     *
-    * @param array $data
     * @return Response
     */
-    public function create($data);
+    public function create();
     
     /**
     * Display a form to edit an existing Unit.
