@@ -1,6 +1,6 @@
 <?php namespace Microffice\Core;
 
-interface ViewableResourceInterface extends ResourceInterface {
+interface ViewableModelResourceInterface extends ModelResourceInterface {
     
     /**
     * Display a form to create a new Unit.
