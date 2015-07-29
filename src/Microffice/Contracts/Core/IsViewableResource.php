@@ -1,11 +1,11 @@
-<?php namespace Microffice\Core;
+<?php namespace Microffice\Contracts\Core;
 
-interface ViewableResourceInterface extends ResourceInterface {
+interface IsViewableResource extends IsResource {
     
     /**
     * Display a form to create a new Unit.
     *
-    * @return Response
+    * @return Illuminate\View
     */
     public function create();
     
@@ -13,7 +13,7 @@ interface ViewableResourceInterface extends ResourceInterface {
     * Display a form to edit an existing Unit.
     *
     * @param int $id
-    * @return Response
+    * @return Illuminate\View
     */
     public function edit($id);
 }

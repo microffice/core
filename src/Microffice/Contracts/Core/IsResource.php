@@ -1,11 +1,18 @@
-<?php namespace Microffice\Core;
+<?php namespace Microffice\Contracts\Core;
 
-interface ResourceInterface {
+/**
+* Resources that CANNOT be altered from the UI.
+* 
+* These Resources are fully mangable from the App using
+* index(), stire(), show(), update() and destroy()
+* @return Response
+*/
+interface IsResource {
     
     /**
     * Return a listing of the resource.
     *
-    * @return Response
+    * @return \Illuminate\Database\Eloquent\Collection
     */
     public function index();
 
@@ -13,7 +20,7 @@ interface ResourceInterface {
     * Store a newly created resource in storage.
     *
     * @param array $data
-    * @return Response
+    * @return \Illuminate\Database\Eloquent\Model
     */
     public function store($data);
 
@@ -21,7 +28,7 @@ interface ResourceInterface {
     * Return the specified resource.
     *
     * @param int $id
-    * @return Response
+    * @return \Illuminate\Database\Eloquent\Model|null
     */
     public function show($id);
 
@@ -30,7 +37,7 @@ interface ResourceInterface {
     *
     * @param int $id
     * @param array $data
-    * @return Response
+    * @return \Illuminate\Database\Eloquent\Model
     */
     public function update($id, $data);
 
@@ -38,7 +45,7 @@ interface ResourceInterface {
     * Remove the specified resource from storage.
     *
     * @param int $id
-    * @return Response
+    * @return int (can be checked as boolean)
     */
     public function destroy($id);
 

@@ -1,3 +1,4 @@
 /vendor
-/tests/migrations
-/tests/seeds
+/tests/Stubs/migrations
+/tests/Stubs/seeds
+composer.lock
