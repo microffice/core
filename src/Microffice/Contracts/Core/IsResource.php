@@ -4,7 +4,7 @@
 * Resources that CANNOT be altered from the UI.
 * 
 * These Resources are fully mangable from the App using
-* index(), stire(), show(), update() and destroy()
+* index(), store(), show(), update() and destroy()
 * @return Response
 */
 interface IsResource {
